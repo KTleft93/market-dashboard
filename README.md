@@ -59,7 +59,7 @@ This project is licensed under the **Educational/Non-Commercial License**:
 - ✅ You can use, copy, and modify this project for personal or educational purposes.  
 - ❌ You cannot use this project for commercial purposes.  
 
-See [LICENSE](LICENSE) for full details.
+See [LICENSE](https://github.com/KTleft93/market-dashboard/blob/main/LICENSE.md) for full details.
 
 ## 🙌 Acknowledgements
 
