@@ -3,10 +3,12 @@ from finlight_client.models import GetArticlesParams
 from dotenv import load_dotenv
 import os
 
+# Use env var for development
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
-client = FinlightApi(config=ApiConfig(api_key=API_KEY))
+# Loading API key for deployment purposes
+client = FinlightApi(config=ApiConfig(api_key="sk_a92493d14517f6fdb2c9cf4b73d599697786eb0055d1aeda90279e42f0736917"))
 
 
 def get_finlight_news(query="AAPL", pageSize=5):
