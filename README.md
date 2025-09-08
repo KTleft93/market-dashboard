@@ -1,5 +1,10 @@
 # 📊 Market Dashboard
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-orange)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-Educational--Non--Commercial-green)](LICENSE)
+
+
 A **Streamlit-powered dashboard** for monitoring financial markets.  
 It fetches real-time market data from **Yahoo Finance**, computes popular technical indicators, and displays the latest asset-specific news from the **Finlight News API**.  
 
