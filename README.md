@@ -15,13 +15,10 @@ It fetches real-time market data from **Yahoo Finance**, computes popular techni
   - Support & Resistance Levels (50-day High & Low)  
 - 📰 **Latest Market News** using Finlight API  
 - 📊 Interactive **charts and gauges** (via Plotly + Streamlit)  
-- 🎨 Responsive dashboard layout with a clean UI  
+- 🎨 Responsive dashboard layout with a clean UI
+- Running screenshot available in assets folder
 
----
 
-## 📷 Screenshot (Example)
-
-> `![Dashboard Screenshot](assets/screenshot_dashboard.png)`
 
 ---
 
