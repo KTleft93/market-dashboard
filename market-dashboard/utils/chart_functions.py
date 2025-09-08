@@ -4,21 +4,21 @@ import plotly.express as px
 import streamlit as st
 
 
+def sanitize_help(text: str) -> str:
+    if text is None:
+        return None
+    return text.replace("%", "%%").replace("{", "{{").replace("}", "}}").replace("[", "").replace("]", "")
+
+
 def display_metric_safe(column, label: str, value, help=None):
-    """
-    Display a metric in a Streamlit column with safe handling.
-    - Adds $ automatically for SMA, Low, and High.
-    - Handles None/NaN values gracefully.
-    """
     if isinstance(value, (float, int)) and not pd.isna(value):
-        # Append $ for price-related metrics
         if any(keyword in label for keyword in ["SMA", "Low", "High", "Price"]):
             display_value = f"${value:,.2f}"
         else:
             display_value = f"{value:,.2f}"
-        column.metric(label=label, value=display_value, help=help)
+        column.metric(label=label, value=display_value, help=sanitize_help(help))
     else:
-        column.metric(label=label, value="Not Enough Data...", help=help)
+        column.metric(label=label, value="Not Enough Data...", help=sanitize_help(help))
 
 
 def display_gauge(column, value, title, bar_color="darkblue"):
