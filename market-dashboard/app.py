@@ -12,12 +12,12 @@ symbol = "^GSPC"
 df = get_price_data(symbol)
 
 # Metric tool tip html
-tooltip_html = f"""
+tooltip_html = """
 <div style="position: relative; display: inline-block; border-bottom: 1px dotted black;">
   <span style="font-size:20px; font-weight:bold;">Hello</span>
   <span style="visibility:hidden; width:120px; background-color:black; color:#fff;
                text-align:center; border-radius:6px; padding:5px; position:absolute;
-               z-index:1; bottom:125%; left:50%; margin-left:-60px;">
+               z-index:1; bottom:125%%; left:50%%; margin-left:-60px;">
     Hello
   </span>
 </div>
@@ -115,7 +115,7 @@ if selected_asset:
     with col2:
         display_metric_safe(st, f"Average MFI ({period})", avg_mfi, help="Money Flow Index")
         display_metric_safe(st, "50-day Low", support_50, help="Lowest CLosing Price In Last 50 Days")
-        display_metric_safe(st, "50-day High", resistance_50, help="Highest Closing Price In Last 200 Days")
+        display_metric_safe(st, "50-day High", resistance_50, help="Highest Closing Price In Last 50 Days")
     with col3:
         g1, g2 = st.columns(2, gap="medium")
         display_gauge(g1, avg_mfi, "MFI")
