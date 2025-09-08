@@ -22,7 +22,7 @@ It fetches real-time market data from **Yahoo Finance**, computes popular techni
 ## 📷 Screenshot (Example)
 
 > You can add a screenshot here once deployed:  
-> `![Dashboard Screenshot](<img width="1652" height="948" alt="screenshot_dashboard" src="https://github.com/user-attachments/assets/eea4cf52-406b-4760-99c2-b75d6899814e" />)`
+> `![Dashboard Screenshot](screenshot_dashboard.png)`
 
 ---
 
