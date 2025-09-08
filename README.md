@@ -21,7 +21,7 @@ It fetches real-time market data from **Yahoo Finance**, computes popular techni
 
 ## 📷 Screenshot (Example)
 
-> `![Dashboard Screenshot](screenshot_dashboard.png)`
+> `![Dashboard Screenshot](https://github.com/KTleft93/market-dashboard/blob/main/screenshot_dashboard.png)`
 
 ---
 
