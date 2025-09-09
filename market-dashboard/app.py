@@ -54,8 +54,6 @@ calculate_sma(df)
 # Calculate Support and resistance
 calculate_support_resistance_levels(df)
 
-# Get current price
-current_price = df["Close"].iloc[-1]
 
 # -----------------------
 # Streamlit UI
@@ -85,6 +83,7 @@ if selected_asset:
     df = get_price_data(symbol, period)
 
     # Calculate indicators for this asset
+    current_price = df["Close"].iloc[-1]
     avg_mfi, df = calculate_average_mfi(df)
     avg_rsi, df = calculate_average_rsi(df)
     sma_50, sma_200, df = calculate_sma(df)
