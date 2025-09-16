@@ -11,17 +11,6 @@ from data.fetch_news import get_finlight_news
 symbol = "^GSPC"
 df = get_price_data(symbol)
 
-# Metric tool tip html
-tooltip_html = """
-<div style="position: relative; display: inline-block; border-bottom: 1px dotted black;">
-  <span style="font-size:20px; font-weight:bold;">Hello</span>
-  <span style="visibility:hidden; width:120px; background-color:black; color:#fff;
-               text-align:center; border-radius:6px; padding:5px; position:absolute;
-               z-index:1; bottom:125%%; left:50%%; margin-left:-60px;">
-    Hello
-  </span>
-</div>
-"""
 
 st.set_page_config(layout="wide")
 
